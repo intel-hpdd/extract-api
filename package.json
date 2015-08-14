@@ -1,0 +1,32 @@
+{
+  "name": "@intel-js/extract-api",
+  "version": "1.0.0",
+  "description": "Pulls the path from an api call.",
+  "main": "index.js",
+  "author": "IML Team",
+  "dependencies": {
+    "@intel-js/fp": "1.0.2"
+  },
+  "devDependencies": {
+    "jasmine": "2.3.1",
+    "jscs": "2.1.0",
+    "jshint": "2.8.0",
+    "krusty-jasmine-reporter": "1.0.0",
+    "pre-commit": "1.1.1"
+  },
+  "scripts": {
+    "test": "JASMINE_CONFIG_PATH=jasmine.json NODE_ENV=test jasmine",
+    "jshint": "jshint --c ./.jshintrc --exclude-path ./.jshintignore .",
+    "jscs": "jscs ."
+  },
+  "pre-commit": [
+    "jscs",
+    "jshint",
+    "test"
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/intel-js/extract-api.git"
+  },
+  "license": "MIT"
+}
