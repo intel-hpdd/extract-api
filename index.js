@@ -6,7 +6,7 @@
 // license that can be found in the LICENSE file.
 
 export default function(path: string): string {
-  const regexp = /^[\/]?api\/[^\/]+\/(\d+)[\/]?$/;
+  const regexp = /^[/]?api\/[^/]+\/(\d+)[/]?$/;
 
   const results = regexp.exec(path);
 
