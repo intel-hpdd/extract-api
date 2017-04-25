@@ -1,9 +1,9 @@
 {
-  "name": "intel-extract-api",
+  "name": "@mfl/extract-api",
   "version": "1.0.2",
   "description": "Pulls the path from an api call.",
   "main": "index.js",
-  "author": "IML Team",
+  "author": "MFL Team",
   "devDependencies": {
     "jasmine": "2.3.2",
     "jscs": "2.5.1",
@@ -22,11 +22,11 @@
     "test"
   ],
   "publishConfig": {
-    "registry": "https://ubit-artifactory-or.intel.com/artifactory/api/npm/iml-npm-local"
+    "access": "public"
   },
   "repository" : {
     "type" : "git",
-    "url": "https://github.intel.com/IML/extract-api.git"
+    "url": "https://github.intel.com/MFL/extract-api.git"
   },
   "license": "MIT"
 }
