@@ -14,8 +14,7 @@
     ]
   ],
   "plugins": [
-    "transform-flow-strip-types",
-    "transform-strict-mode"
+    "transform-flow-strip-types"
   ],
   "sourceMaps": "inline"
 }
