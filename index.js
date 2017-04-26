@@ -1,7 +1,9 @@
+// @flow
+
 //
 // INTEL CONFIDENTIAL
 //
-// Copyright 2013-2015 Intel Corporation All Rights Reserved.
+// Copyright 2013-2017 Intel Corporation All Rights Reserved.
 //
 // The source code contained or described herein and all documents related
 // to the source code ("Material") are owned by Intel Corporation or its
@@ -19,28 +21,9 @@
 // otherwise. Any license under such intellectual property rights must be
 // express and approved by Intel in writing.
 
-(function () {
-  'use strict';
+export default function(path: string): string | void {
+  const regexp = /^[\/]?api\/[^\/]+\/(\d+)[\/]?$/;
 
-  /**
-   * Given a typical resource uri extract out it's id.
-   * @param {String} path
-   * @returns {Number|null}
-   */
-  function extractApiId (path) {
-    var regexp = /^[\/]?api\/[^\/]+\/(\d+)[\/]?$/;
-
-    var results = regexp.exec(path);
-    if (results != null)
-      return results[1];
-  }
-
-  /* global angular */
-
-  if (typeof module !== 'undefined')
-    module.exports = extractApiId;
-  if (typeof angular !== 'undefined')
-    angular.module('extractApiIdModule', []).value('extractApiId', extractApiId);
-  if (typeof window !== 'undefined')
-    window.extractApiId = extractApiId;
-}());
+  const results = regexp.exec(path);
+  if (results != null) return results[1];
+}
