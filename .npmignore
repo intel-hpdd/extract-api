@@ -8,7 +8,5 @@ node_modules
 .gitignore
 yarn.lock
 *.log
-run_test.sh
-readme.md
 /test
 /coverage
