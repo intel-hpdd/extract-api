@@ -25,5 +25,8 @@ export default function(path: string): string | void {
   const regexp = /^[\/]?api\/[^\/]+\/(\d+)[\/]?$/;
 
   const results = regexp.exec(path);
-  if (results != null) return results[1];
+
+  if (results == null) throw new Error(`could not extract api id from ${path}`);
+
+  return results[1];
 }
