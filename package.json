@@ -1,6 +1,6 @@
 {
   "name": "@mfl/extract-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Pulls the path from an api call.",
   "main": "index.js",
   "author": "MFL Team",
