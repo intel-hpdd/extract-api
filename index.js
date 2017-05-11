@@ -21,7 +21,7 @@
 // otherwise. Any license under such intellectual property rights must be
 // express and approved by Intel in writing.
 
-export default function(path: string): string | void {
+export default function(path: string): string {
   const regexp = /^[\/]?api\/[^\/]+\/(\d+)[\/]?$/;
 
   const results = regexp.exec(path);
