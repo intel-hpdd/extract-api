@@ -1,11 +1,11 @@
 {
-  "name": "@mfl/extract-api",
+  "name": "@iml/extract-api",
   "version": "1.0.4",
   "description": "Pulls the path from an api call.",
   "main": "index.js",
-  "author": "MFL Team",
+  "author": "IML Team",
   "devDependencies": {
-    "@mfl/flow-jasmine": "1.6.1",
+    "@iml/flow-jasmine": "1.6.1",
     "babel-eslint": "^7.2.3",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-preset-env": "^1.4.0",
@@ -44,7 +44,7 @@
       "test"
     ],
     "transformIgnorePatterns": [
-      "/node_modules/(?!@mfl)/"
+      "/node_modules/(?!@iml)/"
     ]
   },
   "license": "MIT"
